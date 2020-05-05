@@ -65,7 +65,7 @@ def main(email):
 
     stocks = [stock for stock in results if verify_stock(stock) == True]
 
-    helper_functions.send_email(destination=email)
+    helper_functions.send_email(destination=email, stocks = stocks)
 
 if __name__ == "__main__":
     email = str(input("Please enter the email to send the stocks to: "))
