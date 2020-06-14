@@ -79,6 +79,7 @@ def html_formatter(stocks):
     ###this just formats the HTML so I don't have to do it in the send_email function
     string = """<p>Below is the list of stocks that pass the Benjamin Graham Fundamentals test.</p> <p>Happy Investing!</p>
                 <table style = "width:235px;">
+            
                 <tbody>
             """
     for stock in stocks:
