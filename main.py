@@ -23,13 +23,13 @@ def main(email):
             if ((totalDebt / currentAssets) > 1.1 or (currentAssets / currentDebt) < 1.5):
                 return False
 
-            # #peRatio
+            ##peRatio
             if (results[stock]["advanced-stats"]["peRatio"] < 0) or (results[stock]["advanced-stats"]["priceToBook"] > 1.2):
                 return False
 
             #dividends 
-                if (results[stock]["stats"]["stats"]) < .01:
-                    return False
+            if (results[stock]["stats"]["stats"]) < .01:
+                return False
 
             return True
 
@@ -44,7 +44,7 @@ def main(email):
 
     all_stocks = list(helper_functions.chunks(
 
-        helper_functions.return_stocks(), 99
+        helper_functions.return_stocks(), 99 
         
     ))
 

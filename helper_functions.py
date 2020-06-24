@@ -13,7 +13,7 @@ def get_all_stocks():
        the CSV file is put in the current directory
     """
     alpha = list(string.ascii_uppercase)
-
+    
     symbols = []
 
     for each in alpha:
